@@ -12,16 +12,19 @@ body:before, body:after{
     display:table;
     clear:both;
 }
+#title{
+    font-size: 1.75rem;
+}
 .work .desc {
     float:left;
 }
 .work .rank {
     padding:.5rem;
-    font-weight: bolder;
     font-size: 2rem;
 }
 .work .star {
     font-size: 2rem;
+    font-weight: bold;
     color: #aaa;
 }
 .work .copy {
@@ -45,7 +48,6 @@ body:before, body:after{
 }
 
 #genres {
-    word-break: keep-all;
 }
 #genres input {
     display: none;
@@ -55,6 +57,7 @@ body:before, body:after{
     padding:.5rem;
     line-height: 2rem;
     font-weight: bold;
+    word-break: keep-all;
 }
 #genres input:checked + label {
     background-color: #444;
