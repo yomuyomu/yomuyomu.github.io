@@ -1,0 +1,61 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    font-family: 
+    width:90%;
+    max-width:640px;
+    margin:0 auto;
+}
+body:before, body:after{
+    display:table;
+    clear:both;
+}
+.work .desc {
+    float:left;
+}
+.work .rank {
+    padding:.5rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.work .star {
+    font-size: 2rem;
+    color: #aaa;
+}
+.work .copy {
+    float:right;
+    font-family: serif;
+}
+.work .genre{
+    padding:.5rem;
+    font-weight: bold;
+}
+.work .title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.author, .reviewer{
+    font-style:italic;
+}
+.reviews{
+    clear:both;
+    font-family: serif;
+}
+
+#genres {
+    word-break: keep-all;
+}
+#genres input {
+    display: none;
+}
+#genres label {
+    border-radius:1rem;
+    padding:.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+#genres input:checked + label {
+    background-color: #444;
+    color:#fff;
+}
