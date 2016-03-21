@@ -4,9 +4,11 @@ html{
 }
 body{
     width:100%;
+    max-width: 640px;
     margin:0 auto;
     padding:0;
 }
+
 body:before, body:after{
     display:table;
     clear:both;
@@ -107,11 +109,12 @@ input[type="checkbox"]:checked ~ .reviews {
     border-radius: .34rem;
     border-color: #bbb;
     border-style: solid;
+    padding: 0 .25rem;
 }
 .reviews .review{
     margin:0 .75rem;
     line-height: 2rem;
-    white-space: nowrap;
+    white-space: pre-wrap;
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
