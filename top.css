@@ -1,65 +1,130 @@
 html{
     font-family: sans-serif;
+    background-color: #fff;
 }
 body{
-    font-family: 
-    width:90%;
-    max-width:640px;
+    width:100%;
     margin:0 auto;
-    padding:0 5%;
+    padding:0;
 }
 body:before, body:after{
     display:table;
     clear:both;
 }
+
 #title{
-    font-size: 1.75rem;
-}
-.work .desc {
-    float:left;
-}
-.work .rank {
+    font-size: 1rem;
+    font-weight: bold;
     padding:.5rem;
-    font-size: 2rem;
+    text-align: center;
+    color:#000;
 }
-.work .star {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #aaa;
-}
-.work .copy {
-    float:right;
-    font-family: serif;
-}
-.work .genre{
-    padding:.5rem;
-    font-weight: bold;
-}
-.work .title{
-    font-size: 2rem;
-    font-weight: bold;
-}
-.author, .reviewer{
-    font-style:italic;
-}
-.reviews{
-    clear:both;
-    font-family: serif;
+
+#desc{
+    color:#555;
+    padding:0 1rem;
+    font-size: .75rem;
 }
 
 #genres {
+    padding:0 .5rem;
+    background-color: #555;
+    color:#fff;
 }
 #genres input {
     display: none;
 }
 #genres label {
     border-radius:1rem;
+    border-width: 0;
     padding:.5rem;
     line-height: 2rem;
     font-weight: bold;
-    word-break: keep-all;
+    white-space: nowrap;
 }
 #genres input:checked + label {
-    background-color: #444;
-    color:#fff;
+    background-color: #fff;
+    color:#555;
+}
+
+#works{
+}
+#works .entry {
+    padding:0.25rem 1rem;
+    display: block;
+}
+input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+input[type="checkbox"]:checked ~ .reviews {
+    height: 100%;
+    visibility: visible;
+}
+.work {
+    display: table;
+}
+.work .desc {
+    float:left;
+}
+.work .rank {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.work .star {
+    padding:.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #bbb;
+}
+.work .title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.work .genre{
+    padding:.5rem;
+    font-weight: bold;
+    font-size: .75rem;
+    color: #bbb;
+}
+.work .copy {
+    float:right;
+    display: table;
+    vertical-align: bottom;
+    font-family: serif;
+    color:#555;
+}
+.author, .reviewer{
+    font-style:italic;
+}
+.reviews{
+    height: 0;
+    visibility: hidden;
+    clear:both;
+    font-family: serif;
+    font-size: .75rem;
+    border-width: 1px;
+    border-radius: .34rem;
+    border-color: #bbb;
+    border-style: solid;
+}
+.reviews .review{
+    margin:0 .75rem;
+    line-height: 2rem;
+    white-space: nowrap;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+#footer{
+    font-family: serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: .75rem;
+    text-align: right;
+    padding: .5rem 1rem;
+    /*background-color: #555;
+    color: #fff;*/
 }

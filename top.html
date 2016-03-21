@@ -1,54 +1,85 @@
 <!DOCTYPE html><html jang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta name="description" content="信頼できると自動判定された読者のレビュー数が集計されたものです。">
+<meta name="description" content="信頼できると判定された読者のレビュー数が集計されたものです。">
 <meta name="keywords" content="カクヨム,読者,ランキング,レビュー">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@t_e_l_">
 <meta name="twitter:title" content="カクヨム読者レビュー数ランキング">
-<meta name="twitter:description" content="信頼できると自動判定された読者のレビュー数が集計されたものです。">
-<link rel="stylesheet" type="text/css" href="top.css#a"/>
+<meta name="twitter:description" content="信頼できると判定された読者のレビュー数が集計されたものです。">
+<link rel="stylesheet" type="text/css" href="./top.css">
 <title>カクヨム読者レビュー数ランキング</title></head><body>
+    <div id="title">カクヨム読者レビュー数ランキング</div>
+    <div id="desc">信頼できると判定された読者のレビュー数が集計されたものです。作品数: 640 更新: 2016.3.20</div>
+    <div id="genres">
+        <input type="radio" name="genre" id="genre_all" onclick="changeGenre(this)" checked>
+        <label for="genre_all">全て</label>
+        <input type="radio" name="genre" id="genre_fantasy" onclick="changeGenre(this)">
+        <label for="genre_fantasy">ファンタジー</label>
+        <input type="radio" name="genre" id="genre_sf" onclick="changeGenre(this)">
+        <label for="genre_sf">SF</label>
+        <input type="radio" name="genre" id="genre_romance" onclick="changeGenre(this)">
+        <label for="genre_romance">ロマンス</label>
+        <input type="radio" name="genre" id="genre_action" onclick="changeGenre(this)">
+        <label for="genre_action">アクション</label>
+        <input type="radio" name="genre" id="genre_drama" onclick="changeGenre(this)">
+        <label for="genre_drama">ドラマ</label>
+        <input type="radio" name="genre" id="genre_horror" onclick="changeGenre(this)">
+        <label for="genre_horror">ホラー</label>
+        <input type="radio" name="genre" id="genre_mystery" onclick="changeGenre(this)">
+        <label for="genre_mystery">ミステリー</label>
+        <input type="radio" name="genre" id="genre_history" onclick="changeGenre(this)">
+        <label for="genre_history">歴史</label>
+        <input type="radio" name="genre" id="genre_nonfiction" onclick="changeGenre(this)">
+        <label for="genre_nonfiction">ノンフィクション</label>
+        <input type="radio" name="genre" id="genre_other" onclick="changeGenre(this)">
+        <label for="genre_other">その他</label></div>
+    <div id="works">
 
-    <p id="title">カクヨム読者レビュー数ランキング</p>
-
-    <p>信頼できると自動判定された読者のレビュー数が集計されたものです。</p>
-
-    <p id="genres"><input type="radio" name="genre" id="genre_all" checked/>
-    <label for="genre_all" onclick="">全て</label>
-    <input type="radio" name="genre" id="genre_fantasy"/>
-    <label for="genre_fantasy" onclick="">ファンタジー</label>
-    <input type="radio" name="genre" id="genre_sf"/>
-    <label for="genre_sf" onclick="">SF</label>
-    <input type="radio" name="genre" id="genre_romance"/>
-    <label for="genre_romance" onclick="">ロマンス</label>
-    <input type="radio" name="genre" id="genre_action"/>
-    <label for="genre_action" onclick="">アクション</label>
-    <input type="radio" name="genre" id="genre_drama"/>
-    <label for="genre_drama" onclick="">ドラマ</label>
-    <input type="radio" name="genre" id="genre_horror"/>
-    <label for="genre_horror" onclick="">ホラー</label>
-    <input type="radio" name="genre" id="genre_mystery"/>
-    <label for="genre_mystery" onclick="">ミステリー</label>
-    <input type="radio" name="genre" id="genre_history"/>
-    <label for="genre_history" onclick="">歴史</label>
-    <input type="radio" name="genre" id="genre_nonfiction"/>
-    <label for="genre_nonfiction" onclick="">ノンフィクション</label>
-    <input type="radio" name="genre" id="genre_other"/>
-    <label for="genre_other" onclick="">その他</label></p>
-
-    <p id="1" class="genre_sf">
-    <div class="work">
-    <span class="desc"><span class="rank">1</span><span class="star">＊16</span><span class="genre">SF</span><span class="title">横浜駅SF</span></span>
-    <span class="copy">横浜駅が自己増殖して日本列島を覆い尽くす未来小説。 ―― <span class="author">イスカリオテの湯葉</span></span>
+    <div class="entry genre_sf">
+        <input type="checkbox" id="ch1">
+        <label class="work" for="ch1">
+            <span class="desc"><span class="rank">1</span><span class="star">＊16</span><span class="title">横浜駅SF</span><span class="genre">SF</span></span>
+            <span class="copy">横浜駅が自己増殖して日本列島を覆い尽くす未来小説。 ―― <span class="author">イスカリオテの湯葉</span></span>
+        </label>
+        <div class="reviews"><a href="https://kakuyomu.jp/works/4852201425154905871" target="_blank">
+            <span class="review">Werdenの社会技術SF ―― <span class="reviewer">@qualum</span></span>
+            <span class="review">いい小説 ―― <span class="reviewer">@Chikapu_0311</span></span>
+            <span class="review">待ち時間にオススメ！ ―― <span class="reviewer">AranK</span></span>
+            <span class="review">文章が上手です ―― <span class="reviewer">@quadrofenia</span></span>
+        </a></div>
     </div>
-    <div class="reviews">
-    <div>Werdenの社会技術SF ―― <span class="reviewer">@qualum</span></div>
-    <div>いい小説 ―― <span class="reviewer">@Chikapu_0311</span></div>
-    <div>待ち時間にオススメ！ ―― <span class="reviewer">AranK</span></div>
-    <div>文章が上手です ―― <span class="reviewer">@quadrofenia</span></div>
-    </div></p>
 
-<script src="top.js"/>
+    <div class="entry genre_sf">
+        <input type="checkbox" id="ch2">
+        <label class="work" for="ch2">
+            <span class="desc"><span class="rank">2</span><span class="star">＊16</span><span class="title">横浜駅SF</span><span class="genre">SF</span></span>
+            <span class="copy">横浜駅が自己増殖して日本列島を覆い尽くす未来小説。 ―― <span class="author">イスカリオテの湯葉</span></span>
+        </label>
+        <div class="reviews"><a href="https://kakuyomu.jp/works/4852201425154905871" target="_blank">
+            <span class="review">Werdenの社会技術SF ―― <span class="reviewer">@qualum</span></span>
+            <span class="review">いい小説 ―― <span class="reviewer">@Chikapu_0311</span></span>
+            <span class="review">待ち時間にオススメ！ ―― <span class="reviewer">AranK</span></span>
+            <span class="review">文章が上手です ―― <span class="reviewer">@quadrofenia</span></span>
+        </a></div>
+    </div>
+
+    <div class="entry genre_sf">
+        <input type="checkbox" id="ch3">
+        <label class="work" for="ch3">
+            <span class="desc"><span class="rank">3</span><span class="star">＊16</span><span class="title">横浜駅SF</span><span class="genre">SF</span></span>
+            <span class="copy">横浜駅が自己増殖して日本列島を覆い尽くす未来小説。 ―― <span class="author">イスカリオテの湯葉</span></span>
+        </label>
+        <div class="reviews"><a href="https://kakuyomu.jp/works/4852201425154905871" target="_blank">
+            <span class="review">Werdenの社会技術SF ―― <span class="reviewer">@qualum</span></span>
+            <span class="review">いい小説 ―― <span class="reviewer">@Chikapu_0311</span></span>
+            <span class="review">待ち時間にオススメ！ ―― <span class="reviewer">AranK</span></span>
+            <span class="review">文章が上手です ―― <span class="reviewer">@quadrofenia</span></span>
+        </a></div>
+    </div>
+
+    </div>
+    <div id="footer">SEE YOU SCOOP COWBOY...</div>
+<script src="./top.js"></script>
 </body></html>
    
     
